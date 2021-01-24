@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/user.css" />
+        <title>Password Update</title>
+    </head>
+    <body>
+        <header id="main-header">
+            <div class="header1">
+                <h3>Online Notice Board</h3>
+            </div>
+            </header>
+
+            <nav id="navbar">
+                <div class="topnav">
+                    <p>Admin</p>
+                    <div class="topnav-right">
+                        <a href="alogout.php">Log Out</a>
+                    </div>
+                </div>
+            </nav>
+        <div class="wrapper">
+            <div class="links">
+                <a href="admin_pa.html">Update Password</a>
+                <br>
+                <a href="admin_mu.php">Manage Users</a>
+                <br>
+                <a href="admin_mn.php">Manage Notices</a>
+            </div>
+
+            <div>
+                <h3>Update Password</h3>
+                <br><br>
+                <form action="admin_update_pa.php" method="POST">
+                    <div>
+                        <label>Enter old Password</label>
+                        <input type="password" name="oldpassword">
+                    </div>
+                    <br>
+                    <div>
+                        <label>Enter New Password</label>
+                        <input type="password" name="newpassword">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" name="update">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="reset" name="reset">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
